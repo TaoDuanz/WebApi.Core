@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi.Core</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Core.AOP.CacheAOPbase.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            AOP的拦截方法
+            </summary>
+            <param name="invocation"></param>
+        </member>
+        <member name="M:WebApi.Core.AOP.CacheAOPbase.CustomCacheKey(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            自定义缓存的key
+            </summary>
+            <param name="invocation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.AOP.CacheAOPbase.GetArgumentValue(System.Object)">
+            <summary>
+            object 转 string
+            </summary>
+            <param name="arg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Core.AOP.RedisCacheAOP">
+            <summary>
+            面向切面的缓存使用
+            </summary>
+        </member>
+        <member name="M:WebApi.Core.AutoMapper.CustomProfile.#ctor">
+            <summary>
+            配置构造函数，用来创建关系映射
+            </summary>
+        </member>
+        <member name="T:WebApi.Core.Controllers.BaseController">
+            <summary>
+            自定义路由模版
+            用于解决swagger文档No operations defined in spec!问题
+            </summary>
+        </member>
+        <member name="M:WebApi.Core.Controllers.TestController.Sum(System.Int32,System.Int32)">
+            <summary>
+            求和
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Core.Controllers.UserController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Hello">
+            <summary>
+            Hello请求
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.User(WebApi.Core.Model.Entity.User)">
+            <summary>
+            获取User实体
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Login(System.String)">
+            <summary>
+            获取token
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Admin">
+            <summary>
+            需要Admin权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.System">
+            <summary>
+            需要System权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.SystemAndAdmin">
+            <summary>
+            需要System和Admin权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.ParseToken">
+            <summary>
+            解析Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.GetUser(System.Int32)">
+            <summary>
+            根据id获取数据
+            </summary>
+            <param name="id">参数id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Add(WebApi.Core.Model.Entity.User)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Update(WebApi.Core.Model.Entity.User)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Delete(System.Object[])">
+            <summary>
+            删除数据
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Autofac">
+            <summary>
+            测试autofac
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.Redis(System.Int32)">
+            <summary>
+            测试Redis
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.AutoMapper(System.Int32)">
+            <summary>
+            测试AutoMapper
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Core.Controllers.UserController.AopTest(System.Int32)">
+            <summary>
+            测试aop缓存redis
+            </summary>
+        </member>
+        <member name="P:WebApi.Core.Filter.GlobalExceptionsFilter.JsonErrorResponse.Message">
+            <summary>
+            生产环境的消息
+            </summary>
+        </member>
+        <member name="P:WebApi.Core.Filter.GlobalExceptionsFilter.JsonErrorResponse.DevelopmentMessage">
+            <summary>
+            开发环境的消息
+            </summary>
+        </member>
+        <member name="M:WebApi.Core.JsonConv.LowercasePolicy.ConvertName(System.String)">
+            <summary>
+            返回对象全小写
+            </summary>
+        </member>
+        <member name="M:WebApi.Core.Middleware.CustomExceptionMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)">
+            
+        </member>
+    </members>
+</doc>
